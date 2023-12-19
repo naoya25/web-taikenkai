@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.slide-all {
+  height: 100vh;
+  width: 200vw;
+  display: flex;
+}
+
+/* スライド1スタート */
+.slide-all > #slide1 {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgb(41, 145, 20), black);
+}
+.slide-all > #slide1 > .my-img {
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 30vw;
+}
+.slide-all > #slide1 > .try1 {
+  position: absolute;
+  left: 0vw;
+  background-color: rgb(27, 150, 168);
+  height: 100vh;
+  width: 30vw;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+.slide-all > #slide1 > .try2 {
+  position: absolute;
+  left: 60vw;
+  background-color: rgb(27, 150, 168);
+  height: 100vh;
+  width: 40vw;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+.slide-all > #slide1 > .try3 {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 50vw;
+  background-color: rgb(221, 221, 213);
+  clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+.slide-all > #slide1 > .try4 {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  height: 20vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+.slide-all > #slide1 > .name {
+  position: absolute;
+  bottom: 20vh;
+  left: 5vw;
+  color: white;
+  font-size: 9em;
+  font-family: "Caveat", cursive;
+}
+.slide-all > #slide1 > .hobby {
+  position: absolute;
+  top: 80vh;
+  left: 10vw;
+  color: white;
+  font-size: 2em;
+  background-color: rgb(184, 184, 184);
+  width: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+/* スライド1おわり */
+
+/* スライド2スタート */
+
+.slide-all > #slide2 {
+  height: 100vh;
+  width: 100vw;
+}
+.slide-all > #slide2 > .title {
+  font-size: 3em;
+  margin-top: 10vh;
+  text-align: center;
+}
+.slide-all > #slide2 > .intro {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+.slide-all > #slide2 > .intro > .text {
+  width: 50%;
+  height: auto;
+  background-color: antiquewhite;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+}
+.slide-all > #slide2 > .intro > .text .font-bold {
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+@media screen and (max-width: 1450px) {
+  .slide-all > #slide2 > .intro {
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    margin-top: 5vh;
+  }
+}
+
+/* スライド2おわり */
+
+/* 下の目次つけよう */
+
+.index {
+  display: flex;
+  position: fixed;
+  top: 98vh;
+  left: 98vw;
+  transform: translate(-100%, -100%);
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.5;
+}
+.index > a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 12.5px;
+}
+.index > a:hover {
+  color: white;
+  background-color: black;
+}
